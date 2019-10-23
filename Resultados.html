@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>¿Que tanto sabes de musica?</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+	<link rel="stylesheet" href="css/theme.css" type="text/css">
+	<script src="script.js">
+
+	</script>
+</head>
+
+<body>
+
+	<h2>Resultados</h2>
+	<div class="grid-x grid-padding" id="genero">
+		<table>
+			<tr>
+				<th>
+					<div class="large-2 medium-2 cell" style="padding:10px">
+						<h2 id="correctas">
+							<script>
+                document.getElementById("correctas").innerHTML ="Respuestas Correctas: " + localStorage.getItem("correctas");
+							</script>
+						</h2>
+					</div>
+				</th>
+				<th>
+					<div class="large-4 medium-4 cell" style="padding:10px">
+						<h2 id="incorrectas">
+              <script>
+                document.getElementById("incorrectas").innerHTML ="Respuestas Incorrectas: " + localStorage.getItem("incorrectas");
+							</script>
+            </h2>
+					</div>
+				</th>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<th>
+					<div class="large-6 medium-6 cell" style="padding:10px">
+						<h2>Volver a jugar POP</h2>
+
+						<a href="Pop.html" onclick="reset()">
+							<img src="../trivia_reloaded/imagenes/pop_pag3.jpeg" alt="artistasPOP" width= 300px height= 300px></a>
+    </div>
+        </th>
+        <th>
+
+       <div class="large-6 medium-6 cell" style="padding:10px">
+        <h2>Volver a jugar ROCK</h2>
+        <a href="Rock.html" onclick="reset()">
+        <img src="../trivia_reloaded/imagenes/rock_pag3.jpg" alt="artistasRock" width= 300px height=300px></a>
+    </div>
+        </th>
+      </tr>
+    </table>
+
+  </body>
+</html>

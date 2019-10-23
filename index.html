@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>¿Que tanto sabes de musica?</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/theme.css" type="text/css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h1>¡Bienvenidos a la trivia musical!</h1>
+  <br>
+  <h3>Para comenzar
+    <br>registrate<br><br>
+  </h3>
+  <!-- Se crea una forma para obtener el nombre del usuario.-->
+  <form name="form" action="Pag3.html" onsubmit="return validateForm()">
+
+  <!--Se crea un campo qu valide el nombre-->
+  <div class="large-4 medium-4 cell" style="padding:100px">
+   <label>¿Cuál es tu nombre?</label>
+    <input type="text" id="nombres" name="input_name" class="form-control" required/>
+  <br/>
+  </div>
+ <!-- Se crea un boton para enviar la forma (nombre del usuario)-->
+<button type="submit" class="btn btn-primary btn-lg" id="boton">Comenzar
+</button>
+
+  <!--  <input type="submit" value="Start" />-->
+  </form>
+
+</body>
+
+</html>

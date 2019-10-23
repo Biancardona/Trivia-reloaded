@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>¿Que tanto sabes de musica?</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/theme.css" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- Se asignó un "id" al h4 para actualizar su innerHTML con el nombre de usuario guardado en el localStorage (nombres) .-->
+
+<!-- Actualiza el H4 con id nombre_usuario con el nombre guardado en el localStorage .-->
+
+
+    <h1 id="nombre_usuario">
+    </h1>
+
+     <script>
+      console.log(localStorage.getItem("nombres"))
+    document.getElementById("nombre_usuario").innerHTML ="¡Hola " + localStorage.getItem("nombres")+ "!";
+    </script>
+
+    <br>
+    <h2> ¿Estas listo?</h2>
+    <h3>Ahora, escoge tu tema:</h3>
+    <br>
+    <br>
+
+
+<div class="grid-x grid-padding" id="genero">
+    <table>
+      <tr>
+        <th>
+    <div class="large-6 medium-6 cell" style="padding:10px">
+        <h2> POP</h2>
+
+        <a href="Pop.html" >
+        <img src="../trivia_reloaded/imagenes/pop_pag3.jpeg" alt="artistasPOP" width= 300px height= 300px></a>
+    </div>
+        </th>
+        <th>
+
+       <div class="large-6 medium-6 cell" style="padding:10px">
+        <h2>ROCK</h2>
+        <a href="Rock.html" >
+        <img src="../trivia_reloaded/imagenes/rock_pag3.jpg" alt="artistasRock" width= 300px height=300px></a>
+    </div>
+        </th>
+      </tr>
+    </table>
+    <br>
+    <br>
+
+
+    <!--<a href="Pop.html" </a>
+		<button type="button"> Pop</button>-->
+
+    <!--<script src="script.js"></script>-->
+
+    <!--<a href="Rock.html" </a>
+		<button type="button"> Rock</button>-->
+
+
+
+
+  </body>
+</html>
